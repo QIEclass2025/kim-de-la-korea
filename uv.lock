@@ -1,8 +1,21 @@
-version = 1
-revision = 3
-requires-python = ">=3.13"
+[project]
+name = "rock-paper-scissors-subtract-one"
+version = "1.0.0"
+description = "Tkinter 기반 보드게임: 포켓몬 API 이미지를 사용한 가위바위보 게임 (+ 크리티컬 히트 기능)"
+authors = [
+    { name = "Your Name" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
 
-[[package]]
-name = "kim-de-la-korea"
-version = "0.1.0"
-source = { virtual = "." }
+dependencies = [
+    "requests",
+    "pillow",
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+
